@@ -188,16 +188,6 @@ PlanetTable/Table.css     ← Person 6 only
 ContactForm/Form.css      ← Person 7 only
 Footer/Footer.css         ← Person 1 only
 ```
-
-Shared colours and fonts live in `styles/variables.css`. Use them like this:
-```css
-color: var(--color-primary);
-```
-
-Don't edit `variables.css` without telling Person 1 first.
-
-Make your own section responsive. Don't leave it for someone else.
-
 ---
 
 ## The Rules
