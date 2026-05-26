@@ -1,5 +1,7 @@
 
 
 export default function ContactForm() {
-  return <div>Contact Form</div>
+  return (
+    <div>ContactForm</div>
+  )
 }

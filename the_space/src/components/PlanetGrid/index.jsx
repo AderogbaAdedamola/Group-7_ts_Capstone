@@ -1,5 +1,7 @@
 
 
 export default function PlanetGrid() {
-  return <div>Planet Grid</div>
+  return (
+    <div>PlanetGrid</div>
+  )
 }
