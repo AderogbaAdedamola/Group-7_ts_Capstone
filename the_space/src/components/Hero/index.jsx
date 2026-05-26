@@ -1,5 +1,9 @@
 
 
 export default function Hero() {
-  return <div>Hero</div>
+  return (
+  <div>
+    This the Hero section
+  </div>
+)
 }
