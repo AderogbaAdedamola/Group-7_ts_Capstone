@@ -2,7 +2,7 @@ import { usePlanets } from "../../hooks/usePlanets";
 import "./index.css";
 
 export default function PlanetTable() {
-  const { planets, loading, error } = usePlanets();
+  const { loading, error } = usePlanets();
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
