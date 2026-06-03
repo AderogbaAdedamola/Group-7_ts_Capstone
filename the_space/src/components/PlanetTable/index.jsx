@@ -8,7 +8,7 @@ export default function PlanetTable() {
   if (error) return <p>{error}</p>;
 
   return (
-    <div class="section-3">
+    <div className="section-3">
       <h2>Planetary Facts at a Glance</h2>
       <p>
         Below is a comparison table of major planets in our solar system. The
@@ -23,7 +23,7 @@ export default function PlanetTable() {
         <table id="table-1">
           <thead className="header-color">
             <tr>
-              <th colspan="2"></th>
+              <th colSpan="2"></th>
               <th>Name</th>
               <th>Mass(10 24kg)</th>
               <th>Diameter (km)</th>
@@ -33,7 +33,7 @@ export default function PlanetTable() {
           </thead>
           <tbody className="bg-color">
             <tr>
-              <td colspan="2" rowspan="4" id="diff-color1">
+              <td colSpan="2" rowSpan="4" id="diff-color1">
                 Terrestial Planets
               </td>
               <td>Mercury</td>
@@ -64,10 +64,10 @@ export default function PlanetTable() {
               <td>3.7</td>
             </tr>
             <tr>
-              <td rowspan="4" colspan="1" id="diff-color2">
+              <td rowSpan="4" colSpan="1" id="diff-color2">
                 Jovian Planets
               </td>
-              <td rowspan="2" colspan="1" id="diff-color3">
+              <td rowSpan="2" colSpan="1" id="diff-color3">
                 Gas Giants
               </td>
               <td>Jupitar</td>
@@ -84,7 +84,7 @@ export default function PlanetTable() {
               <td>3.7</td>
             </tr>
             <tr>
-              <td rowspan="2" colspan="1" id="diff-color4">
+              <td rowSpan="2" colSpan="1" id="diff-color4">
                 Ice Giants
               </td>
               <td>Uranus</td>
@@ -101,7 +101,7 @@ export default function PlanetTable() {
               <td>3.7</td>
             </tr>
             <tr>
-              <td colspan="2" id="diff-color5">
+              <td colSpan="2" id="diff-color5">
                 Dwarf Planets
               </td>
               <td>Pluto</td>
