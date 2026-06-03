@@ -6,15 +6,27 @@ import PlanetTable from './components/PlanetTable'
 import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 
+
 function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+
+      <section id="hero">
+        <Hero />
+      </section>
+
       <VideoSection />
-      <PlanetGrid />
-      <PlanetTable />
-      <ContactForm />
+
+      <section id="planets">
+        <PlanetGrid />
+        <PlanetTable />
+      </section>
+
+      <section id="contact">
+        <ContactForm />
+      </section>
+
       <Footer />
     </>
   )
