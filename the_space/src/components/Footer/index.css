@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+.footer {
+  background-color: #051540;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.about-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.members-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.members-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  color: #a0aec0;
+  font-size: 14px;
+}
+
+.avatar-stack {
+  display: flex;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #051540;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 13px;
+  color: #fff;
+  margin-left: -8px;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar-m { background-color: #7f77dd; }
+.avatar-a { background-color: #1d9e75; }
+.avatar-i { background-color: #e53e3e; }
+
+.footer hr {
+  border: none;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  margin: 0 0 12px;
+}
+
+.footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .copyright-content p,
+.footer .tsacademy p {
+  margin: 0;
+  font-size: 12px;
+  /* color: #a0aec0; */
+  line-height: 1.6;
+}
+
+.footer .tsacademy p {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 16px 20px;
+  }
+  .footer .copyright {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+.members-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 14px;
+  color: #a0aec0;
+  font-size: 14px;
+  line-height: 1.8;
+}
