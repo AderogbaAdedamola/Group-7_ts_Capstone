@@ -6,7 +6,7 @@ export default function Footer() {
     { initial: "P", name: "Peter", colorClass: "avatar-m" },
     { initial: "B", name: "Balogun", colorClass: "avatar-i" },
     { initial: "A", name: "Awoniran", colorClass: "avatar-m" },
-    { initial: "R", name: "Rashidat", colorClass: "avatar-m" },
+    { initial: "R", name: "Rashidat", colorClass: "avatar-a" },
   ]
 
   return (
