@@ -1,9 +1,13 @@
 .section-3 {
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 10px 30px;
+  box-sizing: border-box;
 }
 h2 {
   padding-left: 5px;
+  color: #164baf;
 }
 p {
   font-size: small;
@@ -34,19 +38,28 @@ figcaption {
   font-size: 12px;
   padding: 0 5px;
 }
-.header-color {
-  background-color: #000080;
+.header-color th {
+  background-color: #164baf;
   color: #fafafa;
   font-weight: bold;
+  padding: 16px 12px;
+  text-align: center;
 }
 .bg-color {
   background-color: #dcdde7;
+}
+tbody td {
+  padding: 16px 12px;
+  border: 2px solid #fff;
+  text-align: center;
+  font-size: 14px;
+  background-color: #f2f7ff;
 }
 #diff-color1,
 #diff-color2,
 #diff-color3,
 #diff-color4,
 #diff-color5 {
-  background-color: #b0b5df;
+  background-color: #d1e3ff;
   font-weight: bold;
 }
