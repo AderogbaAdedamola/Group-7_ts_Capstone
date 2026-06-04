@@ -15,7 +15,7 @@ export default function PlanetGrid() {
   return (
     <div className="container">
       <div className="planet-description">
-        <h2>Visualizing the Differences Between Planets</h2>
+        <p className="h2">Visualizing the Differences Between Planets</p>
         <p className="second-desc">
           Each planet in out solar system has unique physical characteristics.
           Visual comparisons help highlight how vastly different terrestial
