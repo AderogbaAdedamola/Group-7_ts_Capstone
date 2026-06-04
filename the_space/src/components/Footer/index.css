@@ -50,9 +50,10 @@
   margin-left: 0;
 }
 
-.avatar-m { background-color: #7f77dd; }
+.avatar-b { background-color: #7f77dd; }
 .avatar-a { background-color: #1d9e75; }
-.avatar-i { background-color: #e53e3e; }
+.avatar-c { background-color: #e53e3e; }
+.avatar-d { background-color: #ed8936; }    
 
 .footer hr {
   border: none;

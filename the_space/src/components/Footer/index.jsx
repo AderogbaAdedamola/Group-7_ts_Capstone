@@ -3,10 +3,11 @@ import "./index.css"
 export default function Footer() {
   const members = [
     { initial: "A", name: "Adedamola", colorClass: "avatar-a" },
-    { initial: "P", name: "Peter", colorClass: "avatar-m" },
-    { initial: "B", name: "Balogun", colorClass: "avatar-i" },
-    { initial: "A", name: "Awoniran", colorClass: "avatar-m" },
+    { initial: "P", name: "Peter", colorClass: "avatar-b" },
+    { initial: "B", name: "Balogun", colorClass: "avatar-c" },
+    { initial: "A", name: "Awoniran", colorClass: "avatar-d" },
     { initial: "R", name: "Rashidat", colorClass: "avatar-a" },
+    { initial: "V", name: "Victoria", colorClass: "avatar-b" },
   ]
 
   return (
