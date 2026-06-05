@@ -14,6 +14,10 @@ export default function Footer() {
     <div className="footer">
       <div className="footer-content">
         <p className="about-title">About</p>
+        <p>The Space</p>
+        <p className="about-description">
+          We are a passionate team of developers building modern web experiences.
+        </p>
         <p className="members-title">Members</p>
         <div className="avatar-stack">
           {members.map((m, index) => (
@@ -33,11 +37,17 @@ export default function Footer() {
 
       <div className="copyright">
         <div className="copyright-content">
-          <p>&copy;2026 Designed by Amaka &amp; Ifeoma A.</p>
-          <p>Built by GroupName. All rights reserved</p>
+          <p>&copy;2026 Designed by {" "}
+            <a href="https://amakandukwu.com/" className="footer-link">Amaka</a> &amp; {" "}
+            <a href="https://www.linkedin.com/in/ifeomaokocha" className="footer-link">Ifeoma A.</a>
+          </p>
+          <p>
+            Built by{" "}
+            <a href="https://github.com/AderogbaAdedamola/Group-7_ts_Capstone/" className="footer-link">The_Space</a>. All rights reserved
+          </p>
         </div>
         <div className="tsacademy">
-          <p>TSAcademy</p>
+          <a href="#" className="footer-link">TSAcademy</a>
         </div>
       </div>
     </div>

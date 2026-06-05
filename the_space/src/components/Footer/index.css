@@ -99,3 +99,18 @@
   font-size: 14px;
   line-height: 1.8;
 }
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+.about-description {
+  color: #a0aec0;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 12px;
+  max-width: 280px;
+}
