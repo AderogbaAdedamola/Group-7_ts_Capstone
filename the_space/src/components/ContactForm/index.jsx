@@ -3,9 +3,11 @@ import './index.css';
 
 export default function ContactForm() {
   const [success, setSuccess] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const fullname = document.getElementById('fname').value;
     const email = document.getElementById('email').value;
@@ -14,6 +16,7 @@ export default function ContactForm() {
 
     if (!fullname || !email || !phone || !message) {
       alert('Please fill all fields');
+      setLoading(false);
       return;
     }
 
@@ -27,14 +30,16 @@ export default function ContactForm() {
       });
 
       if (response.ok) {
-        setSuccess('Form submitted successfully');
+        setSuccess('Form submitted successfully! 🚀🎉');
         e.target.reset();
+        setLoading(false);
       } else {
         alert('Submission failed');
+        setLoading(false)
       }
     } catch (error) {
       alert('An error occurred');
-      console.error(error);
+      setLoading(false);
     }
   };
 
@@ -100,8 +105,8 @@ export default function ContactForm() {
 
           {success && <p className="success-message">{success}</p>}
 
-          <button type="submit" className="submit-btn">
-            Submit &gt;
+          <button type="submit" className="submit-btn" disabled={loading}>
+            {loading ? 'Submitting...' : 'Submit >'}
           </button>
 
         </form>
