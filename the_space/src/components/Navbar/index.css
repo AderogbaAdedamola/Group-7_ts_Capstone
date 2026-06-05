@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .navbar {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  /* z-index: 1000; */
   background-color: #051540;
   padding: 20px 0;
 }
@@ -11,7 +17,6 @@
   width: 90%;
   max-width: 1200px;
   margin: auto;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,10 +41,6 @@
   cursor: pointer;
   transition: 0.3s;
 }
-
-/* .nav-links button:hover {
-  color: #4a8cff;
-} */
 
 .hamburger {
   display: none;
@@ -68,13 +69,7 @@
     display: flex;
   }
 
-  table {
-    display: none;
-  }
-
-  .planet-card{
-    display: none;
-  }
+  
      .container{
      background: white;
   }
@@ -107,5 +102,11 @@
   .success{
     color: aliceblue;
     font-size: 20px;
+  }
+}
+
+@media (max-width:480px) {
+  .logo{
+    margin:0 auto;
   }
 }
