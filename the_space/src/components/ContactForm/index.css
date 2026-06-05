@@ -1,0 +1,116 @@
+.contact-section {
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.contact-container {
+  max-width: 900px;
+}
+
+.contact-container h2 {
+  font-size: 1.8rem;
+  color: #1a3db5;
+  margin-bottom: 0.5rem;
+}
+
+.contact-container p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.form-group label span {
+  color: red;
+  margin-left: 2px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  color: #111;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1a3db5;
+}
+
+.form-group textarea {
+  resize: none;
+  height: 100px;
+}
+
+.char-count {
+  font-size: 0.78rem;
+  color: #888;
+  margin: 2px 0 0 0;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+  background-color: #164BAF;
+  color: #fff;
+  border: none;
+  padding: 0.85rem 3rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: #1530a0;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .contact-container > p {
+    text-align: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

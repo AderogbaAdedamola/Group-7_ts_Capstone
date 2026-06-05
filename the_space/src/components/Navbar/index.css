@@ -101,12 +101,11 @@
     color: blue;
     cursor: pointer;
   }
-  button: hover{
+  button:hover{
   background-color: #1d4ed8;
   }
   .success{
     color: aliceblue;
     font-size: 20px;
-    
   }
 }

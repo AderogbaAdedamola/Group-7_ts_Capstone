@@ -9,7 +9,6 @@ function Navbar() {
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
     });
-
     setMenuOpen(false);
   };
 
@@ -21,16 +20,13 @@ function Navbar() {
           <img src={logo} alt="" />
         </div>
 
-
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           <button onClick={() => scrollToSection("hero")}>
             Home
           </button>
-
           <button onClick={() => scrollToSection("planets")}>
             Explore the Data
           </button>
-
           <button onClick={() => scrollToSection("contact")}>
             Contact Us
           </button>
@@ -41,41 +37,10 @@ function Navbar() {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
-          <button onClick={() => scrollToSection("contact form")}>
-            Contact <form action=""></form>
-          </button>
         </div>
+
       </div>
-      import{ useState } from 'react'
-      import'./'index.css';
-      export defalut function ContactForm() {
-        const[success, setsucess]=useState('');
-        const handleSubmit=(e)=> {
-          e.preventDefault()
-          const fullname=document.getElementbyid('fname').value;
-           const email=document.getElementbyid('email').value;
-           const phone=document.getElementbyid('tel').value;
-           const message=document.getElementbyid('message').value;
-           if(!fullname|| !email|| !phone|| !message){
-            alert('Please fill all fields');
-            try{
-              //whitebricks.com/tsacademy.php
-              const response = await fetch('whitebricks.com/tsacademy.php',) {
-               method:'POST',
-               headers:{
-                'content-type':'application/json',{
-            }
-          if(response.ok){
-           setsucess('Form submitted successfully');
-           e.target.reset();
-          } else {
-            alert('Submission failed');
-          } 
-        } catch(console.error){
-        alert('an error occurred');
-        console.error(error);{
-        }
-     }
+    </nav>
   );
 }
 

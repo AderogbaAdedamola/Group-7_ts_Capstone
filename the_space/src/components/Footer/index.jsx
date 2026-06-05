@@ -11,7 +11,7 @@ export default function Footer() {
   ]
 
   return (
-    <div className="footer">
+    <section className="footer">
       <div className="footer-content">
         <p className="about-title">About</p>
         <p>The Space</p>
@@ -50,6 +50,6 @@ export default function Footer() {
           <a href="#" className="footer-link">TSAcademy</a>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

@@ -1,35 +1,111 @@
-
+import { useState } from 'react';
+import './index.css';
 
 export default function ContactForm() {
+  const [success, setSuccess] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const fullname = document.getElementById('fname').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('tel').value;
+    const message = document.getElementById('message').value;
+
+    if (!fullname || !email || !phone || !message) {
+      alert('Please fill all fields');
+      return;
+    }
+
+    try {
+      const response = await fetch('https://whitebricks.com/tsacademy.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ fullname, email, phone, message }),
+      });
+
+      if (response.ok) {
+        setSuccess('Form submitted successfully');
+        e.target.reset();
+      } else {
+        alert('Submission failed');
+      }
+    } catch (error) {
+      alert('An error occurred');
+      console.error(error);
+    }
+  };
+
   return (
-    <div>
-      <h1>Have Questions About Planetary Science?</h1> 
-<p>Interested in learning more about space,astronomy,or how planetary data is collected and analyzed?</p>
-<p>Reach out and we'll get back to you</p>
-<form>
-  <fieldset>
-    <label for="fname">Full Name*</label><br />
-    <input type="text" id="fname" name="fname" placeholder="Full Name" maxLength={20} minLength={10} title="please fill in your full name min of 10 character and max of 20 character"required>
-    </input><br />
-    <label for="email">Email*</label><br />
-    <input type="email" id="email" name="email" placeholder="example@example.com" title="Please fill on your email"required>
-    </input><br />
-    <label for="tel">Phone Number*</label><br />
-    <input type="tel" id="tel" name="tel" placeholder="Please enter a vaild phone number" title="Please fill in your phone number"required>
-    </input><br />
-    <div>                    
-      <label for="message">Message*</label><br />
-      <textarea id="message" name="message" placeholder="Enter your message" maxLength={100} required></textarea>
-      <p>100 characters</p>
-    </div>
-    <div>
-      <p id="successMessage"></p>
-      <button>
-        Submit
-      </button>
-    </div>
-  </fieldset>
-</form>
-    </div>
-  )
+    <section id="contact" className="contact-section">
+      <div className="contact-container">
+
+        <h2>Have Questions About Planetary Science?</h2>
+        <p>Interested in learning more about space, astronomy, or how planetary data is collected and analyzed? Reach out and we'll get back to you.</p>
+
+        <form onSubmit={handleSubmit}>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="fname">Full Name<span>*</span></label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Full name"
+                maxLength={20}
+                minLength={10}
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email<span>*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label htmlFor="tel">Phone Number<span>*</span></label>
+              <input
+                type="tel"
+                id="tel"
+                name="tel"
+                placeholder="Please enter a valid phone number."
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">Message<span>*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+                maxLength={100}
+                required
+              ></textarea>
+              <p className="char-count">100 characters</p>
+            </div>
+          </div>
+
+          {success && <p className="success-message">{success}</p>}
+
+          <button type="submit" className="submit-btn">
+            Submit &gt;
+          </button>
+
+        </form>
+      </div>
+    </section>
+  );
 }
