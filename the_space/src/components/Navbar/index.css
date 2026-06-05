@@ -47,8 +47,6 @@
   font-size: 2rem;
   cursor: pointer;
 }
-
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -76,5 +74,39 @@
 
   .planet-card{
     display: none;
+  }
+     .container{
+     background: white;
+  }
+  h1{
+    color: blue;
+    margin-bottom: 10px;
+  }
+  .subtitle{
+    color: black;
+    margin-bottom: 30px;
+  }
+  .form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px
+  }
+  label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  button{
+    background-color: #2563eb;
+    color: blue;
+    cursor: pointer;
+  }
+  button: hover{
+  background-color: #1d4ed8;
+  }
+  .success{
+    color: aliceblue;
+    font-size: 20px;
+    
   }
 }
