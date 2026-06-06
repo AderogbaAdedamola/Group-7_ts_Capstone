@@ -31,7 +31,7 @@ export default function PlanetGrid() {
               className="planet-image"
             />
             <div className="label">
-              <p>{planet.id}</p>
+              <p>{planet.name}</p>
               <p>Distance from Sun: {planet.distance}</p>
             </div>
           </div>
