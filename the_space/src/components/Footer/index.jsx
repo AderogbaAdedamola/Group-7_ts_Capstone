@@ -5,9 +5,11 @@ export default function Footer() {
     { initial: "A", name: "Adedamola", colorClass: "avatar-a" },
     { initial: "P", name: "Peter", colorClass: "avatar-b" },
     { initial: "B", name: "Balogun", colorClass: "avatar-c" },
-    { initial: "A", name: "Awoniran", colorClass: "avatar-d" },
+    { initial: "P", name: "Pastorey", colorClass: "avatar-d" },
+    { initial: "A", name: "Awoniran", colorClass: "avatar-e" },
     { initial: "R", name: "Rashidat", colorClass: "avatar-a" },
-    { initial: "V", name: "Victoria", colorClass: "avatar-b" },
+    { initial: "B", name: "Best", colorClass: "avatar-b" },
+    { initial: "V", name: "Victoria", colorClass: "avatar-c" },
   ]
 
   return (
