@@ -69,7 +69,7 @@ tbody td {
   font-weight: bold;
 }
 
-@media (max-width:480px) {
+@media (max-width:590px) {
   table{
    display: none;
   }
