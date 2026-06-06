@@ -2,16 +2,15 @@ import "./index.css"
 
 export default function Footer() {
   const members = [
-    { initial: "A", name: "Adedamola", colorClass: "avatar-a" },
-    { initial: "P", name: "Peter", colorClass: "avatar-b" },
-    { initial: "B", name: "Balogun", colorClass: "avatar-c" },
-    { initial: "P", name: "Pastorey", colorClass: "avatar-d" },
-    { initial: "A", name: "Awoniran", colorClass: "avatar-e" },
-    { initial: "R", name: "Rashidat", colorClass: "avatar-a" },
-    { initial: "B", name: "Best", colorClass: "avatar-b" },
-    { initial: "V", name: "Victoria", colorClass: "avatar-c" },
-  ]
-
+    { initial: "A", name: "Adedamola", colorClass: "avatar-a", github: "https://github.com/AderogbaAdedamola" },
+    { initial: "P", name: "Peter", colorClass: "avatar-b", github: "https://github.com/Auspicious39" },
+    { initial: "B", name: "Balogun", colorClass: "avatar-c", github: "https://github.com/Abiy33" },
+    { initial: "P", name: "Pastorey", colorClass: "avatar-d", github: "https://github.com/CodingWithPastorey" },
+    { initial: "A", name: "Awoniran", colorClass: "avatar-e", github: "https://github.com/AA-Mateen" },
+    { initial: "R", name: "Rashidat", colorClass: "avatar-a", github: "https://github.com/Oyinkansola04" },
+    { initial: "B", name: "Best", colorClass: "avatar-b", github: "https://github.com/Mobolar18" },
+    { initial: "V", name: "Victoria", colorClass: "avatar-c", github: "https://github.com/TorieSteph" },
+  ];
   return (
     <section className="footer">
       <div className="footer-content">
@@ -30,7 +29,11 @@ export default function Footer() {
         </div>
         <ol className="members-list">
           {members.map((m, index) => (
-            <li key={index}>{m.name}</li>
+            <li key={index}>
+              <a href={m.github} target="_blank" rel="noopener noreferrer">
+                {m.name}
+              </a>
+            </li>
           ))}
         </ol>
       </div>

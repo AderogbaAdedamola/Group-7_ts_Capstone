@@ -104,6 +104,15 @@ body {
   font-size: 14px;
   line-height: 1.8;
 }
+.members-list a {
+  text-decoration: none;
+  color: #a0aec0;
+}
+.members-list a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
 .footer-link {
   color: #fff;
   text-decoration: none;
