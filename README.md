@@ -107,7 +107,6 @@ Visit the link shown in your terminal, usually `http://localhost:5173`
 
 ## Credits
 
-- Instructor: [Amaka](https://amakandukwu.com/)
-- Supervisor: [Ifeoma](https://www.linkedin.com/in/ifeomaokocha)
+- Instructors: [Amaka](https://amakandukwu.com/) and [Ifeoma](https://www.linkedin.com/in/ifeomaokocha)
 - Academy: [TS Academy](https://tsacademyonline.com/)
 - Repository: [Group 7](#)
