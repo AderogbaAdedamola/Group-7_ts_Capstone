@@ -1,4 +1,4 @@
-# [Group 7] — Frontend Capstone Project
+# Frontend Capstone Project - Group 7
 
 A React web application that explores our solar system through data. It fetches real planet data from an external API and displays it in a responsive grid and table. It also includes a video section and a validated contact form. Built as a capstone project for the TS Academy Frontend Development course.
 
