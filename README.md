@@ -6,7 +6,7 @@ A React web application that explores our solar system through data. It fetches 
 
 ## 🔗 Live Demo
 
-[group-7-ts-capstone.vercel.app](#)
+[group-7-ts-capstone.vercel.app](https://group-7-ts-capstone.vercel.app)
 
 ---
 
