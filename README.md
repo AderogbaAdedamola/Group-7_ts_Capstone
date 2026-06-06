@@ -1,203 +1,113 @@
-# Team Workflow Guide
+# [Group 7] — Frontend Capstone Project
 
-This is everything you need to contribute to this project. Read it once, follow it always.
+A React web application that explores our solar system through data. It fetches real planet data from an external API and displays it in a responsive grid and table. It also includes a video section and a validated contact form. Built as a capstone project for the TS Academy Frontend Development course.
 
 ---
 
-## Setup
+## 🔗 Live Demo
 
-Do this once before anything else.
+[group-7-ts-capstone.vercel.app](#)
 
-**Tell Git who you are:**
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your@email.com"
+---
+
+## Project Summary
+
+This application recreates a provided mockup as a fully working React web app. It fetches real planet data from an API and displays it in a responsive grid of planet cards. It also includes a comparative planet data table, a video section, and a validated contact form with a submission endpoint. The project demonstrates HTML, CSS and JavaScript fundamentals, React component-based architecture, the Fetch API, responsive web design, and collaborative Git workflows, all skills covered throughout the TS Academy Frontend Development course.
+
+---
+
+## Team Members
+
+| Name | Role | GitHub |
+|------|------|--------|
+| [Aderogba Adedamola] | Team Lead — Footer + App Structure | [github.com/AderogbaAdedamola](#) |
+| [Adekunle Peter] | Assistant Team Lead — Navbar | [github.com/Auspicious39](#) |
+| [⁠Lawal Rashidat] | Hero Section | [github.com/Oyinkansola04](#) |
+| [Pastorey and Victory Okeke] | Video Section | [github.com/CodingWithPastorey](#) & [github.com/TorieSteph](#) |
+| [Abigail Balogun and Abdulmateen Awoniran] | Planet Grid | [github.com/AA-Mateen](#) |
+| [Abigail Balogun] | Fetch API + Planet Table | [github.com/Abiy33](#) |
+| [Akindoyin Best] | Contact Form | [github.com/Mobolar18](#) |
+
+---
+
+## Components
+
+| Component | File |
+|-----------|------|
+| App structure + assembly | `App.jsx` |
+| Navbar + mobile menu | `components/Navbar` |
+| Hero section + CTA scroll | `components/Hero` |
+| Video section | `components/VideoSection` |
+| Planet grid + figure elements | `components/PlanetGrid` |
+| Fetch API + usePlanets hook | `services/api.js`, `hooks/usePlanets.js` |
+| Planet data table | `components/PlanetTable` |
+| Contact form + validation + submit | `components/ContactForm` |
+| Footer | `components/Footer` |
+
+---
+
+## Folder Structure
+
+```
+src/
+  components/
+    Navbar/
+    Hero/
+    VideoSection/
+    PlanetGrid/
+    PlanetTable/
+    ContactForm/
+    Footer/
+  services/
+    api.js
+  hooks/
+    usePlanets.js
+  assets/
+  styles/
+  App.jsx
+  main.jsx
 ```
 
-**Clone the repo:**
+---
+
+## How to Run Locally
+
+**Requirements:** Node.js installed on your machine.
+
+**1. Clone the repository**
 ```bash
 git clone https://github.com/AderogbaAdedamola/Group-7_ts_Capstone.git
 cd the_space
+```
+
+**2. Install dependencies**
+```bash
 npm install
+```
+
+**3. Start the development server**
+```bash
 npm run dev
 ```
 
-If you see the app running in your browser, you're good to go. You'll see a placeholder for every section — that's intentional. Your job is to replace your placeholder with the real thing.
+**4. Open in browser**
+
+Visit the link shown in your terminal, usually `http://localhost:5173`
 
 ---
 
-## Your Branch
+## Git Workflow
 
-Create it once, work on it throughout the project.
-
-```bash
-git checkout -b feature/footer          # Person 1
-git checkout -b feature/navbar          # Person 2
-git checkout -b feature/hero-section    # Person 3
-git checkout -b feature/video-section   # Person 4
-git checkout -b feature/planet-grid     # Person 5
-git checkout -b feature/api-table       # Person 6
-git checkout -b feature/contact-form    # Person 7
-```
-
-To confirm you're on the right branch:
-```bash
-git branch
-```
-The one with `*` is where you are. If it says `main`, stop and create your branch first.
+- All work is done on separate feature branches
+- Contributions are submitted through Pull Requests
+- No one merges their own PR
+- PRs must be reviewed and approved before merging into `main`
 
 ---
 
-## How to Preview Your Work
+## Credits
 
-`App.jsx` is already set up with all components imported. You don't touch it, and you don't need to.
-
-When you run `npm run dev` you'll see the full app in the browser. Your section starts as a placeholder div. As you build, your changes show up live in the browser automatically.
-
-That's it. No extra setup needed to preview your work.
-
----
-
-## Every Time You Sit Down to Work
-
-No exceptions. This order every time:
-
-```bash
-# 1. Pull latest changes first
-git pull origin main
-
-# 2. Write your code
-
-# 3. Check what you changed
-git status
-
-# 4. Stage your work
-git add .
-
-# 5. Commit with a real message
-git commit -m "feat: add navbar with mobile menu"
-
-# 6. Pull again before pushing
-git pull origin main
-
-# 7. Push
-git push origin feature/your-branch-name
-```
-
-First time pushing your branch:
-```bash
-git push --set-upstream origin feature/your-branch-name
-```
-
-After that, `git push` is enough.
-
----
-
-## Commit Messages
-
-Write something that actually describes what you did.
-
-```bash
-# Good
-git commit -m "feat: add hero CTA scroll"
-git commit -m "fix: contact form validation error"
-git commit -m "style: planet grid mobile layout"
-
-# Bad
-git commit -m "update"
-git commit -m "done"
-git commit -m "changes"
-```
-
----
-
-## Pull Requests
-
-When you finish your task, open a PR on GitHub.
-
-1. Go to the repo on GitHub
-2. Click **"Compare & pull request"**
-3. Set base to `main`, compare to your branch
-4. Write a short title describing what you built
-5. Tag Person 1 or Person 2 for review
-6. Click **Create pull request**
-
-**You do not merge your own PR. Ever.** Wait for review.
-
----
-
-## After Your PR Gets Merged
-
-```bash
-git checkout main
-git pull origin main
-git checkout feature/your-branch-name
-git pull origin main
-```
-
----
-
-## If You Get a Merge Conflict
-
-Git will mark it in the file like this:
-```
-<<<<<<< HEAD
-your code
-=======
-their code
->>>>>>> main
-```
-
-Pick the right version, delete the markers, then:
-```bash
-git add .
-git commit -m "fix: resolve merge conflict"
-git push origin feature/your-branch-name
-```
-
-If you're not sure what to keep, ping Person 1 before you touch anything.
-
----
-
-## What Each Person is Building
-
-| Person | Section | Branch |
-|--------|---------|--------|
-| Person 1 | Footer + App structure | `feature/footer` |
-| Person 2 | Navbar + mobile menu | `feature/navbar` |
-| Person 3 | Hero section + CTA scroll | `feature/hero-section` |
-| Person 4 | Video section (no iframe, autoplay, muted, loop) | `feature/video-section` |
-| Person 5 | Planet grid + figure elements | `feature/planet-grid` |
-| Person 6 | Fetch API + usePlanets hook + planet table | `feature/api-table` |
-| Person 7 | Contact form + validation + submit | `feature/contact-form` |
-
-**Person 5 and Person 6** — coordinate directly. Person 6 builds the hook first, Person 5 uses it.
-
----
-
-## CSS
-
-Each component has its own CSS file. Stay in yours.
-
-```
-Navbar/Navbar.css         ← Person 2 only
-Hero/Hero.css             ← Person 3 only
-VideoSection/Video.css    ← Person 4 only
-PlanetGrid/PlanetGrid.css ← Person 5 only
-PlanetTable/Table.css     ← Person 6 only
-ContactForm/Form.css      ← Person 7 only
-Footer/Footer.css         ← Person 1 only
-```
----
-
-## The Rules
-
-- Never push to `main`
-- Never merge your own PR
-- Always pull before you push
-- Stay in your component folder
-- If you're stuck for more than 30 minutes, say something in the group. Don't go quiet.
-
----
-
-*Questions go in the group chat.*
+- Instructor: [Amaka](https://amakandukwu.com/)
+- Supervisor: [Ifeoma](https://www.linkedin.com/in/ifeomaokocha)
+- Academy: [TS Academy](https://tsacademyonline.com/)
+- Repository: [Group 7](#)
