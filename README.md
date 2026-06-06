@@ -20,13 +20,13 @@ This application recreates a provided mockup as a fully working React web app. I
 
 | Name | Role | GitHub |
 |------|------|--------|
-| [Aderogba Adedamola] | Team Lead — Footer + App Structure | [github.com/AderogbaAdedamola](#) |
-| [Adekunle Peter] | Assistant Team Lead — Navbar | [github.com/Auspicious39](#) |
-| [⁠Lawal Rashidat] | Hero Section | [github.com/Oyinkansola04](#) |
-| [Pastorey and Victory Okeke] | Video Section | [github.com/CodingWithPastorey](#) & [github.com/TorieSteph](#) |
-| [Abigail Balogun and Abdulmateen Awoniran] | Planet Grid | [github.com/AA-Mateen](#) |
-| [Abigail Balogun] | Fetch API + Planet Table | [github.com/Abiy33](#) |
-| [Akindoyin Best] | Contact Form | [github.com/Mobolar18](#) |
+| [Aderogba Adedamola] | Team Lead — Footer + App Structure | [github.com/AderogbaAdedamola](https://github.com/AderogbaAdedamola) |
+| [Adekunle Peter] | Assistant Team Lead — Navbar | [github.com/Auspicious39](https://github.com/Auspicious39) |
+| [⁠Lawal Rashidat] | Hero Section | [github.com/Oyinkansola04](https://github.com/Oyinkansola04) |
+| [Pastorey and Victory Okeke] | Video Section | [github.com/CodingWithPastorey](https://github.com/CodingWithPastorey) & [github.com/TorieSteph](https://github.com/TorieSteph) |
+| [Abigail Balogun and Abdulmateen Awoniran] | Planet Grid | [github.com/AA-Mateen](https://github.com/AA-Mateen) |
+| [Abigail Balogun] | Fetch API + Planet Table | [github.com/Abiy33](https://github.com/Abiy33) |
+| [Akindoyin Best] | Contact Form | [github.com/Mobolar18](https://github.com/Mobolar18) |
 
 ---
 
