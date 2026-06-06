@@ -14,7 +14,7 @@ export default function Footer() {
     <section className="footer">
       <div className="footer-content">
         <p className="about-title">About</p>
-        <p>The Space</p>
+        <p>Group 7</p>
         <p className="about-description">
           We are a passionate team of developers building modern web experiences.
         </p>
@@ -38,16 +38,16 @@ export default function Footer() {
       <div className="copyright">
         <div className="copyright-content">
           <p>&copy;2026 Designed by {" "}
-            <a href="https://amakandukwu.com/" className="footer-link">Amaka</a> &amp; {" "}
-            <a href="https://www.linkedin.com/in/ifeomaokocha" className="footer-link">Ifeoma A.</a>
+            <a href="https://amakandukwu.com/" target="_blank" className="footer-link">Amaka</a> &amp; {" "}
+            <a href="https://www.linkedin.com/in/ifeomaokocha" target="_blank" className="footer-link">Ifeoma A.</a>
           </p>
           <p>
             Built by{" "}
-            <a href="https://github.com/AderogbaAdedamola/Group-7_ts_Capstone/" className="footer-link">The_Space</a>. All rights reserved
+            <a href="https://github.com/AderogbaAdedamola/Group-7_ts_Capstone/" target="_blank"  className="footer-link">The_Space</a>. All rights reserved
           </p>
         </div>
         <div className="tsacademy">
-          <a href="#" className="footer-link">TSAcademy</a>
+          <a href="https://tsacademyonline.com/" target="_blank" className="footer-link">TSAcademy</a>
         </div>
       </div>
     </section>
