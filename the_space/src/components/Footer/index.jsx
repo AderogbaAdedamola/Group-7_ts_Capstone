@@ -5,7 +5,7 @@ export default function Footer() {
     { initial: "A", name: "Adedamola", colorClass: "avatar-a", github: "https://github.com/AderogbaAdedamola" },
     { initial: "P", name: "Peter", colorClass: "avatar-b", github: "https://github.com/Auspicious39" },
     { initial: "B", name: "Balogun", colorClass: "avatar-c", github: "https://github.com/Abiy33" },
-    { initial: "P", name: "Pastorey", colorClass: "avatar-d", github: "https://github.com/CodingWithPastorey" },
+    { initial: "P", name: "Samuel", colorClass: "avatar-d", github: "https://github.com/CodingWithPastorey" },
     { initial: "A", name: "Awoniran", colorClass: "avatar-e", github: "https://github.com/AA-Mateen" },
     { initial: "R", name: "Rashidat", colorClass: "avatar-a", github: "https://github.com/Oyinkansola04" },
     { initial: "B", name: "Best", colorClass: "avatar-b", github: "https://github.com/Mobolar18" },
